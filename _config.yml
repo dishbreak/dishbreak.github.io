@@ -39,7 +39,7 @@ favicon: "/img/favicon.ico"
 
 black-favicon: "/img/black-lab-glass.ico"
 
-background-img: "../img/intro-bg.jpg"
+background-img: "../img/keyboard.jpg"
 
 ##############################
 # Dynamic Text on the Header #
@@ -57,7 +57,7 @@ lines: # You can add HTML Tags in the Text
   - text: "Engineering is about bridging the gap between <i>should</i> and <i>does</i>."
   - text: "You're at your best when you're doing something you've never done before."
 
-me-img: "/img/jetpacktocat.png"
+me-img: "/img/vishal.jpg"
 
 ##############################
 # Color the browser elements #
