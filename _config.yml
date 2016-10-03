@@ -53,7 +53,7 @@ type-speed: 10
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  - text: "If you want to know how everything is put together, pay close attention when things fall apart."
+  - text: "Learn how everything is put together by paying attention when things fall apart."
   - text: "Engineering is about bridging the gap between <i>should</i> and <i>does</i>."
   - text: "You're at your best when you're doing something you've never done before."
 
@@ -122,7 +122,7 @@ events:
 
 # First image of the Timeline
 
-timeline-img: "/img/timeline/default.png"
+timeline-img: "/img/vishal.jpg"
 
 ###########
 # Contact #
@@ -175,6 +175,7 @@ pages_list:
   About: 'about'
   Blog: 'latest-post'
   Timeline: 'timeline'
+  Projects: 'projects'
   Contact: 'contact'
 
 # Exclusion list from the generated _site
