@@ -113,10 +113,10 @@ events:
   - image: ""
     date: "September 2012 - June 2015"
     description: "Attended University of California, Los Angeles (M.S. Engineering, Computer Networks)"
-  - image: "/img/timeline/spidertocat.png"
+  - image: ""
     date: "June 2009 - Today"
     description: "Started work at Lockheed Martin"
-  - image: "/img/timeline/baracktocat.jpg"
+  - image: ""
     date: "September 2006 - June 2010"
     description: "Attended University of California, San Diego (B.S. Electrical Engineering)"
 
@@ -139,7 +139,7 @@ email: "vishal@kotcherlakota.org"
 
 # if the author_blurb is not set, then this feature is skipped
 author_blurb: "Vishal Kotcherlakota is a reformed sysadmin, who writes code and will talk incessantly about DevOps to anyone who will listen. All views expressed here are his and not those of his employers."
-author_blurb_image: "/img/author.png"
+author_blurb_image: "/img/vishal.jpb"
 
 ##################
 # Social Buttons #
