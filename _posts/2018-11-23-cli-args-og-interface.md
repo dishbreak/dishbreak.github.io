@@ -4,7 +4,7 @@ section-type: post
 title: Command Line Options: The Original User Interface
 ---
 
-_I've written a fair number of scripts in my career. It's where I began my journey in software development, and it's an often overlooked aspect of software development, and I think that's a shame. This article is (hopefully) the first in a series where I unpack the lessons I've learned._
+_I've written a fair number of scripts in my career. It's where I began my journey in software development. It's also an often overlooked aspect of the job, and I think that's a shame. This article is (hopefully) the first in a series where I unpack the lessons I've learned scripting for fun and profit._
 
 When I bring up _user interfaces_ while talking about scripting, engineers look at me funny. See, decades of graphical user interfaces have conditioned us to think that the _only_ interfaces worth desiging are graphical. The reality is that in a world of DevOps tools, Docker containers, and continuous integration/continuous delivery (CI/CD), the command line interface is crucial. A poorly designed script will bubble up more problems in your build systems and automation, and increase the cognitive load on the people who need to use it. At the end of the day, they are _users_ who are _interfacing_ with your script, so there is _definitely_ a UI to be had. 
 
