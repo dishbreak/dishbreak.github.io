@@ -1,7 +1,7 @@
 ---
 layout: post
 section-type: post
-title: Command Line Options: The Original User Interface
+title: "Command Line Options: The Original User Interface"
 ---
 
 _I've written a fair number of scripts in my career. It's where I began my journey in software development. It's also an often overlooked aspect of the job, and I think that's a shame. This article is (hopefully) the first in a series where I unpack the lessons I've learned scripting for fun and profit._
