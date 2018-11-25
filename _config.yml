@@ -111,10 +111,13 @@ syntax-highlight: True
 
 events:
   - image: ""
+    date: "Februrary 2017 - November 2018"
+    description: "DevOps / Software Engineering at QuanticMind"
+  - image: ""
     date: "September 2012 - June 2015"
     description: "Attended University of California, Los Angeles (M.S. Engineering, Computer Networks)"
   - image: ""
-    date: "June 2009 - Today"
+    date: "June 2009 - Februrary 2017"
     description: "Started work at Lockheed Martin"
   - image: ""
     date: "September 2006 - June 2010"
