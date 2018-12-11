@@ -51,7 +51,7 @@ In cases where you don't really care about error output, you can redirect the er
 
 	 grep code "fool.txt" 1>matches.txt 2>/dev/null
 
-Additionally, we can use piping to send the output of one command to the input of another. A great example of this is the `less` command. You can use this comand to read long text files in the terminal. 
+Additionally, we can use piping to send the output of one command to the input of another. A great example of this is the `less` command. You can use this command to read long text files in the terminal. 
 
 	$ less really_long_file.txt
 
