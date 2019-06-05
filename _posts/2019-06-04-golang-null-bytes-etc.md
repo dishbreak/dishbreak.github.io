@@ -1,12 +1,12 @@
 ---
 layout: post
 section-type: post
-title: 'Adventures in Golang: Null bytes aren't whitespace!''
+title: "Adventures in Golang: Null bytes aren't whitespace!"
 ---
 
 I'm following along with Miek Gieben's excellent e-book [_Learning Go_](https://www.miek.nl/go). In one of the exercises, the book asks the reader to write their own finger client/server. The server is pretty simple: you send it a TCP packet containing a username, it looks up that username on the system, and then prints back information about the user. The Internet really _was_ a simpler place long ago.
 
-To implement this, I wrote a daemon program. The daemon program uses [`net.Listen()`](https://golang.org/pkg/net/#Listen) to create a listener, and then accepts incoming TCP connections. The daemon dispatches incoming connections to a goroutine. Hooray concurrency!
+To implement this, I wrote a daemon program. The daemon program uses [`net.Listen()`](https://golang.org/pkg/net/#Listen) to create a listener, and then accepts incoming TCP connections. The daemon dispatches incoming connections to a goroutine. Hooray concurrency! You can see the code for the server and client [here](https://github.com/dishbreak/gofinger)
 
 In the code that accepts the connection in Go, I wrote something like this.
 
