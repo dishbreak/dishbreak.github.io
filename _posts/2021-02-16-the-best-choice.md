@@ -26,7 +26,7 @@ Therein lies the issue. Many accidents occur because an individual doesn't have 
 * An alert signifying a failure or problem.
 * Communications from someone else with context.
 
-It's okay to not know something. We cannot posess a full, correct set of information at all times. However, identifying knowlege gaps is how we prevent future mistakes.
+It's okay to not know something. We cannot possess a full, correct set of information at all times. However, identifying knowledge gaps is how we prevent future mistakes.
 
 ## You Didn't Know Your Options
 
@@ -38,11 +38,11 @@ Oftentimes, we make sub-optimal decisions simply because we're not aware of all 
 * Training to better recognize the situation.
 * An escalation policy that makes it clear what to watch for, and who to escalate to.
 
-An organization succeeds when all its decision makers have a full undestanding of the choices at their disposal. If there was no runbook, or you didn't know where to find it, the organization has let you down. We can fix it, but we need to know how to better surface those options in the future.
+An organization succeeds when all its decision makers have a full understanding of the choices at their disposal. If there was no runbook, or you didn't know where to find it, the organization has let you down. We can fix it, but we need to know how to better surface those options in the future.
 
 ## You Had Lousy Options to Choose From
 
-Imagine you walk into your kitchen and discover rotten oranges in your fruit bowl. Strictly speaking, you'ge got three options.
+Imagine you walk into your kitchen and discover rotten oranges in your fruit bowl. Strictly speaking, you've got three options.
 
 1. Eat the orange (and risk getting sick)
 2. Let the orange stay in the bowl (and let the situation worsen)
