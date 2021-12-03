@@ -24,7 +24,7 @@ Firstly, the Jira Board's chief function is to communicate the team's progress d
 
 Secondly, dead tickets impede the sense of flow or progress. They're a reminder of some structural fault or failing, and they can erode your team morale. If your team keeps seeing the same tickets from one sprint to the next, they'll begin to feel like they're in an unwinnable situation.
 
-Lastly, dead tickets are serious contagion. If your board has one ticket that's dead, it won't be long before there's three, five, ten dead tickets. The insidious thing is that as the number of dead tickets increase, so too does the will to get rid of individual tickets. It's hard to commit effort to getting rid of one ticket when there's a dozen other ones stuck in a similar way.
+Lastly, dead tickets are serious contagion. If your board has one ticket that's dead, it won't be long before there's three, five, ten dead tickets. The insidious thing is that as the number of dead tickets increase, so the will to get rid of individual tickets drops. It's hard to commit effort to getting rid of one ticket when there's a dozen other ones stuck in a similar way.
 
 ## What do I do about it?
 
