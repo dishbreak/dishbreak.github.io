@@ -111,6 +111,9 @@ syntax-highlight: True
 
 events:
   - image: ""
+    date: "December 2018 - Present"
+    description: "Staff DevOps Engineer at NerdWallet"
+  - image: ""
     date: "Februrary 2017 - November 2018"
     description: "DevOps / Software Engineering at QuanticMind"
   - image: ""
@@ -118,7 +121,7 @@ events:
     description: "Attended University of California, Los Angeles (M.S. Engineering, Computer Networks)"
   - image: ""
     date: "June 2009 - Februrary 2017"
-    description: "Started work at Lockheed Martin"
+    description: "Systems/Software Engineering at Lockheed Martin"
   - image: ""
     date: "September 2006 - June 2010"
     description: "Attended University of California, San Diego (B.S. Electrical Engineering)"
