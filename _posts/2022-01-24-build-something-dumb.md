@@ -4,7 +4,7 @@ section-type: post
 title: "To Get Smart, Build Something Dumb"
 ---
 
-I fell into software engineering through sheer happenstance. Early in my career, I'd been a systems administratior and a network engineer. I'd come to a realization that the role I was in was going to go away and if I wanted control over my future, I couldn't wait for my manager to assign me to a new role. I reached out to a teammate that I'd interned with, and he put in a good word for me. After a brief conversation with some technical leads, I found myself on a C++ GUI development team. There was _just_ one problem.
+I fell into software engineering through sheer happenstance. Early in my career, I'd been a systems administrator and a network engineer. I'd come to a realization that the role I was in was going to go away and if I wanted control over my future, I couldn't wait for my manager to assign me to a new role. I reached out to a teammate that I'd interned with, and he put in a good word for me. After a brief conversation with some technical leads, I found myself on a C++ GUI development team. There was _just_ one problem.
 
 I'd never written a line of C++ code in my life.
 
