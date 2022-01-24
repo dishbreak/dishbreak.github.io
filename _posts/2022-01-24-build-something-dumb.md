@@ -14,7 +14,7 @@ My first few weeks on the job were miserable. Our build system and installation 
 
 My only option? Build something dumb.
 
-[!a mockup UI with two input fields, an output field, and a button](/img/build-something-dumb/dumb-calc.jpeg)
+![a mockup UI with two input fields, an output field, and a button](/img/build-something-dumb/dumb-calc.jpeg)
 
 What you're looking at is a recreation of my first Qt application. The user could type numbers into two fields, click the button, and get back a result in the the third field. This is a highly impractical program and not useful for much of anything. However, it _did_ teach me some useful concepts:
 
