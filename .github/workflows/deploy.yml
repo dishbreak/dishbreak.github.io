@@ -41,6 +41,8 @@ jobs:
         run: yarn typecheck
       - name: Build
         run: yarn build
+      - name: Add CNAME
+        run: echo kotcherlakota.org > ./build/CNAME
       - name: Setup Pages
         uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6
       - name: Upload artifact
