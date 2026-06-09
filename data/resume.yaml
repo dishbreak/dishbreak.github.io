@@ -1,0 +1,148 @@
+# yaml-language-server: $schema=./resume.schema.json
+name: Vishal Kotcherlakota
+objective: Build and lead high-performing engineering teams.
+summary:
+  - Self-directed with proven results in both in-office and full-time remote roles.
+  - Proven "player coach" with the ability to empower and lead ICs while contributing directly towards team goals.
+  - Capable individual contributor and technology leader, responsible for teams of up to 25 people.
+  - Specialist in DevOps technologies and processes.
+  - Comfortable working in cross-functional teams, collaborating with individuals of various backgrounds to design, release, and troubleshoot production-grade software applications.
+key_achievements:
+  - Oversaw a move to Kubernetes from a legacy container orchestrator.
+  - Migrated 600+ software repositories from Jenkins to Github Actions, utilizing AI Agents, tool-assisted automations, and reporting jobs to track overall progress.
+  - Migrated an identity service off of EC2 instances onto an ECS service with zero downtime and minimal impact to daily operations.
+  - Developed a utility that queried Elasticsearch data via histogram aggregation and exported metrics to Datadog via HTTP ReST. The utility fed C-Suite visiblity into business operations and site performance.
+skills:
+  languages:
+    - Python
+    - Go
+    - HCL
+    - TypeScript
+    - Bash
+  tools:
+    - Docker
+    - Github Actions
+    - Jenkins
+    - Terraform
+keywords:
+  - Microservices
+  - ReST API Design
+  - Infrastructure-as-code
+  - Config management
+  - Systems monitoring/alerting
+experience:
+  - org: NerdWallet
+    startDate: 2018-12-18
+    truncated: false
+    positions:
+      - position: Engineering Manager, Infrastructure Engineering
+        startDate: 2022-04-01
+        key_points:
+          - Hybrid Manager/IC role, full-time remote position.
+          - Led a team of 5 engineers focused on developer experience and release enginering.
+          - Empower developers with tooling to build/deploy software on multiple platforms, including Vercel, Kubernetes, and ECS.
+        key_technologies:
+          - Python
+          - Go
+          - TypeScript
+          - Terraform
+          - Docker
+          - Kubernetes
+          - Helm
+          - Gitops
+          - Github Actions
+          - Vercel
+      - position: Staff Engineer, Production Engineering
+        startDate: 2019-12-18
+        endDate: 2022-03-31
+        key_points:
+          - Participated in a 24/7 oncall rotation, responding to incidents that impacted our site's ability to operate.
+          - Planned and executed multiple migrations and upgrades, including a database split, major version DB upgrade, and Dockerizing an existing application.
+          - Developed standards and best practices that teammates and other teams adopted around migration work and observability.
+        key_technologies:
+          - Python
+          - Go
+          - Terraform
+          - Docker
+          - Packer
+          - Amazon Web Services (EC2, ECS, IAM, Route53, RDS, Lambda, Redshift)
+          - Datadog
+          - ELK Stack
+  - org: QuanticMind
+    startDate: 2017-02-01
+    endDate: 2018-11-20
+    truncated: false
+    positions:
+      - position: Backend Engineer
+        startDate: 2017-11-01
+        endDate: 2018-11-20
+        key_points:
+          - Responsible for collaborating with product engineering to identify, specify, and prioritize features.
+          - Carried out feature development, complete with automated testing.
+          - Designed a phased rollout where we moved customers to an enhanced Mesos scheduler with persistence and high availability, resulting in a system with fewer maintenance needs and potential incidents.
+        key_technologies:
+          - Java
+          - Scala
+          - Docker
+          - MySQL
+          - Amazon Redshift
+          - Apache Mesos
+          - Zookeeper
+      - position: Technical Operations Engineer
+        startDate: 2017-02-01
+        endDate: 2018-11-20
+        key_points:
+          - Aided in the design of Java and Python-based microservices for internal and external use.
+          - Managed a complete, infrastructure-as-code Jenkins platform for handling application builds and deploys.
+          - Designed continuous delivery systems for dockerized web applications, including monitoring and alerting.
+        key_technologies:
+          - Java
+          - Python
+          - Scala
+          - Terraform
+          - Bash
+          - Docker
+          - Docker Compose
+          - Apache Mesos
+          - Zookeeper
+  - org: Lockheed Martin
+    truncated: true
+    startDate: 2009-06-01
+    endDate: 2017-02-01
+    positions:
+      - position: Panopticon -- Software Engineer and Evangelist
+        startDate: 2014-04-01
+        endDate: 2017-02-01
+        key_points:
+          - Software developer for Panopticon, a GeoSpatial integration and visualization platform for air/land/sea/space built on top of NASA’s Java-based WorldWind SDK
+          - Served as an evangelist and technical consultant for the platform, helping teams across the Lockheed Martin Corporation to exploit Panopticon’s capabilities in a wide array of applications.
+          - Maintained and documented Panopticon’s plugin based architecture, both in JavaDoc and internal wiki.
+        key_technologies:
+          - Java
+          - WebStart
+          - WorldWind
+          - Ant
+          - ReST
+          - SOAP
+          - DDS
+      - position: Rail Systems -- Lead Software Engineer
+        startDate: 2014-10-01
+        endDate: 2016-05-01
+        key_points:
+          - Led teams of up to 25 people in the design and development of a safety-critical positive train control (PTC) system for deployment to an Australian freight rail customer.
+          - Implemented several major functions, including a safety-critical acknowledgement feature
+        key_technologies:
+          - C++ (QNX Neutrino OS)
+          - C (TI RTOS)
+          - Java
+          - Python
+          - JIRA/FishEye/Crucible
+education:
+  - institution: University of California, San Diego
+    yearFrom: 2006
+    yearTo: 2010
+    degree: B.S. Electrical Engineering
+  - institution: University of California, Los Angeles
+    yearFrom: 2012
+    yearTo: 2015
+    degree: M.S. Engineering (Computer Networks)
