@@ -37,8 +37,10 @@ jobs:
           cache: "npm"
       - name: Install dependencies
         run: npx ci
+      - name: Generate Route Types
+        run: yarn typecheck
       - name: Build
-        run: npm run build
+        run: yarn build
       - name: Setup Pages
         uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6
       - name: Upload artifact
