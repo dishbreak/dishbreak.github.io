@@ -8,7 +8,8 @@
     "start": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc",
     "resume:check": "node scripts/validate_resume_schema.ts",
-    "resume:schema": "node scripts/generate_resume_schema.ts"
+    "resume:schema": "node scripts/generate_resume_schema.ts",
+    "post:new": "node scripts/create_new_post.ts"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
