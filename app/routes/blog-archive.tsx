@@ -9,7 +9,7 @@ export async function loader({ }: Route.LoaderArgs): Promise<Post[]> {
 }
 
 export default function BlogArchive({ loaderData }: Route.ComponentProps): React.JSX.Element {
-    return <div className="mx-20 my-10">
+    return <div className="mx-20 my-10 max-sm:m-5">
         <div className="font-bold text-5xl text-orange-400">Blog Archive</div>
         <p className="pt-3">You can find an RSS feed for my posts <a href="/feed.xml" className="text-orange-400">here</a>.</p>
         {loaderData.map((p, i) => <div className="py-2 my-1 flex flex-row" key={`post-${i}`}>
