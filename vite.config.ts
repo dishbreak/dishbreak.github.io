@@ -23,6 +23,7 @@ export default defineConfig({
         return {
           title: p.attrs["title"] ?? "(untitled)",
           link: `https://kotcherlakota.org/blog/${p.slug}`,
+          pubDate: p.posted,
           description
         }
       })
