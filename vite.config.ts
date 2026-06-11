@@ -4,10 +4,12 @@ import { rssPlugin } from "vite-plugin-rss";
 import { defineConfig } from "vite";
 import { loadAllPosts } from "./lib/posts";
 import { JSDOM } from "jsdom"
+import { reactRouterHonoServer } from "react-router-hono-server/dev"
 
 export default defineConfig({
   plugins: [
     tailwindcss(),
+    reactRouterHonoServer(),
     reactRouter(),
     rssPlugin({
       mode: "define",
