@@ -14,8 +14,8 @@ export async function loader({ }: Route.LoaderArgs): Promise<string> {
 export default function About({ loaderData }: Route.ComponentProps): React.JSX.Element {
     return <div className='my-10'>
         <title>About Me</title>
-        <div className='flex w-full justify-center items-center max-sm:flex-col-reverse'>
-            <div className='text-8xl max-sm:text-6xl max-sm:pt-4 text-orange-400 font-bold sm:mr-10'>Hi, I'm Vishal.</div>
+        <div className='flex w-full justify-center items-center max-md:flex-col-reverse'>
+            <div className='lg:text-8xl text-6xl max-md:pt-4 text-orange-400 font-bold sm:mr-10'>Hi, I'm Vishal.</div>
             <img src={mypic} className='rounded-full w-80'></img>
         </div>
         <div

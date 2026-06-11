@@ -28,21 +28,27 @@ export default function Experience({ loaderData }: Route.ComponentProps): React.
             </div>
             <div className="sm:flex-1/3">
                 <Heading>Skills</Heading>
-                <div className="text-xl font-bold text-orange-300 pt-2 pb-2">Languages</div>
-                <ul className="list-disc list-outside ml-6">
-                    {loaderData.skills.languages.map((l, i) => <li key={`lang-${i}`}>{l}</li>)}
-                </ul>
-                <div className="text-xl font-bold text-orange-300 pt-2 pb-2">Tools</div>
-                <ul className="list-disc list-outside ml-6">
-                    {loaderData.skills.tools.map((t, i) => <li key={`tool-${i}`}>{t}</li>)}
-                </ul>
+                <div className="max-sm:flex">
+                    <div>
+                        <div className="text-xl font-bold text-orange-300 pt-2 pb-2">Languages</div>
+                        <ul className="list-disc list-outside ml-6">
+                            {loaderData.skills.languages.map((l, i) => <li key={`lang-${i}`}>{l}</li>)}
+                        </ul>
+                    </div>
+                    <div className="max-sm:ml-20">
+                        <div className="text-xl font-bold text-orange-300 pt-2 pb-2">Tools</div>
+                        <ul className="list-disc list-outside ml-6">
+                            {loaderData.skills.tools.map((t, i) => <li key={`tool-${i}`}>{t}</li>)}
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
         <Heading>Experience</Heading>
         {
-            loaderData.experience.map((o, i) => <div key={`org=${i}`} className="p-4 my-10 shadow-lg shadow-orange-300/15 bg-stone-900">
+            loaderData.experience.map((o, i) => <div key={`org=${i}`} className="p-4 mb-10 shadow-lg shadow-orange-300/15 bg-stone-900">
                 <div
-                    className="text-2xl font-bold text-orange-300 pt-8"
+                    className="text-2xl font-bold text-orange-300"
                 >{o.org} {toMonthYearRange(o)}</div>
                 {o.truncated && <div className="text-xl font-bold text-orange-300 pt-2 pb-2">Selected Highlights</div>}
                 {
