@@ -10,6 +10,7 @@ export async function loader({ }: Route.LoaderArgs): Promise<Resume> {
 
 export default function Experience({ loaderData }: Route.ComponentProps): React.JSX.Element {
     return <div className="mx-10 pb-10">
+        <title>My Experience</title>
         <div className="font-bold text-orange-400 max-sm:text-4xl text-6xl border-b-4 border-orange-400 pt-8 pb-3">{loaderData.name}</div>
         <Heading>Objective</Heading>
         <P>{loaderData.objective}</P>

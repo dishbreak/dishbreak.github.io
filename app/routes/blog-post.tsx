@@ -6,11 +6,13 @@ export async function loader({ params }: Route.LoaderArgs): Promise<Post> {
     return await loadPost(params.slug);
 }
 
-export default function Blog({ loaderData }: Route.ComponentProps): React.JSX.Element {
 
+export default function Blog({ loaderData }: Route.ComponentProps): React.JSX.Element {
+    const title = loaderData.attrs["title"] ?? "(untitled post)"
     return <div className="ml-20 mr-10 max-sm:mx-2">
+        <title>{title}</title>
         <div>
-            <h1 className="text-4xl font-bold mt-4 mb-2 text-orange-400">{loaderData.attrs["title"] ?? ""}</h1>
+            <h1 className="text-4xl font-bold mt-4 mb-2 text-orange-400">{title}</h1>
         </div>
         <div className="text-orange-300">
             posted {loaderData.posted.toLocaleDateString()}

@@ -3,6 +3,7 @@ import type { Route } from "./+types/contact";
 
 export default function Contact({ }: Route.ComponentProps): React.JSX.Element {
     return <div className="mx-20 my-10">
+        <title>Contact Me</title>
         <div className="font-bold text-5xl text-orange-400 pb-3">Contact Me</div>
         <p className="pb-1.5">You can contact me in the following ways:</p>
         <div>
