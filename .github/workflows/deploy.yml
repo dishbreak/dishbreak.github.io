@@ -35,6 +35,8 @@ jobs:
         with:
           node-version: lts/*
           cache: "npm"
+      - name: set up yarn
+        run: yarn set version berry
       - name: Install dependencies
         run: npx ci
       - name: Generate Route Types
