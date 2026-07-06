@@ -30,7 +30,6 @@
   },
   "devDependencies": {
     "@cloudflare/vite-plugin": "^1.43.0",
-    "@cloudflare/workers-types": "^5.20260706.1",
     "@react-router/dev": "8.1.0",
     "@tailwindcss/vite": "^4.2.2",
     "@types/jsdom": "^28.0.3",
@@ -43,8 +42,7 @@
     "tailwindcss": "^4.2.2",
     "typescript": "^5.9.3",
     "vite": "^8.0.3",
-    "vite-plugin-rss": "^0.0.6",
-    "wrangler": "^4.107.0"
+    "vite-plugin-rss": "^0.0.6"
   },
   "packageManager": "yarn@4.17.0"
 }

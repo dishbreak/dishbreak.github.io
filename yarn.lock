@@ -443,13 +443,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cloudflare/workers-types@npm:^5.20260706.1":
-  version: 5.20260706.1
-  resolution: "@cloudflare/workers-types@npm:5.20260706.1"
-  checksum: 10c0/d9ed5129d0dcbd3fa346832eddf9dfa30303888cc13b8e0cd9aa73ca8d1456d032b2db15c3d36791d1b3b6e4ca8e15b0470f28e0366508b855bcac44d3bfc173
-  languageName: node
-  linkType: hard
-
 "@cspotcode/source-map-support@npm:0.8.1":
   version: 0.8.1
   resolution: "@cspotcode/source-map-support@npm:0.8.1"
@@ -2791,7 +2784,6 @@ __metadata:
   resolution: "static-site@workspace:."
   dependencies:
     "@cloudflare/vite-plugin": "npm:^1.43.0"
-    "@cloudflare/workers-types": "npm:^5.20260706.1"
     "@heroicons/react": "npm:^2.2.0"
     "@hono/node-server": "npm:1.19.14"
     "@react-router/dev": "npm:8.1.0"
@@ -2815,7 +2807,6 @@ __metadata:
     typescript: "npm:^5.9.3"
     vite: "npm:^8.0.3"
     vite-plugin-rss: "npm:^0.0.6"
-    wrangler: "npm:^4.107.0"
     yaml: "npm:^2.9.0"
     zod: "npm:^4.4.3"
   languageName: unknown
@@ -3149,7 +3140,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:4.107.0, wrangler@npm:^4.107.0":
+"wrangler@npm:4.107.0":
   version: 4.107.0
   resolution: "wrangler@npm:4.107.0"
   dependencies:
