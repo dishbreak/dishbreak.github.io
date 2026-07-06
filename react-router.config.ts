@@ -5,7 +5,6 @@ export default {
   // Config options...
   // Server-side render by default, to enable SPA mode set this to `false`
   ssr: false,
-  serverBuildFile: "server/index.js",
   async prerender({ getStaticPaths }: { getStaticPaths: () => string[] }) {
     const slugs: string[] = []
 
