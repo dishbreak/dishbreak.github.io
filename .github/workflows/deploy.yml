@@ -43,6 +43,8 @@ jobs:
         run: yarn typecheck
       - name: Build
         run: yarn build
+      - name: Copy 404 page
+        run: cp ./build/client/notfound/index.html ./build/client/404.html
       - name: Add CNAME
         run: echo kotcherlakota.org > ./build/client/CNAME
       - name: Setup Pages
