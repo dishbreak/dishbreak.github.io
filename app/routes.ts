@@ -1,4 +1,7 @@
 import { type RouteConfig, index, layout, prefix, route } from "@react-router/dev/routes";
+import { flatRoutes } from '@react-router/fs-routes'
+
+const guideRoutes = await flatRoutes({ rootDirectory: "routes/guides" })
 
 export default [
     index("routes/home.tsx"),
@@ -9,6 +12,9 @@ export default [
         ...prefix("/blog", [
             route("/", "routes/blog-archive.tsx"),
             route("/:slug", "routes/blog-post.tsx"),
+        ]),
+        ...prefix('/guides', [
+            ...guideRoutes,
         ]),
         route("/notfound", "routes/notfound.tsx")
     ])

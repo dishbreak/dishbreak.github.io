@@ -1,0 +1,36 @@
+import { Aside } from '../../../components/Aside'
+
+# Introduction
+
+This page is intended to be a guide for how to get your own site set up on Github Pages using the following tools:
+
+* React Router v8
+* Vite
+* Marked
+
+<Aside headline="Heads up!">
+    I'm assuming you have Node installed, and have enabled Yarn.
+</Aside>
+
+
+# Project Setup
+
+## Bootstrapping
+
+Follow Github's guide for creating a repository [here](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-a-repository-for-your-site).
+
+Clone the repository to a local directory. like so:
+
+```
+gh repo clone dishbreak/dishbreak.github.io
+```
+
+Once that's installed, use [Vite's built-in bootstrapper](https://vite.dev/guide/#scaffolding-your-first-vite-project) to create the project.
+
+```
+yarn create vite
+```
+
+When prompted, select `React` as the framework, and select the `React Router` variant.
+
+## Configuring Yarn

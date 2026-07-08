@@ -39,6 +39,8 @@ jobs:
         run: corepack enable && yarn set version berry
       - name: Install dependencies
         run: npx ci
+      - name: Check constraints
+        run: yarn constraints
       - name: Generate Route Types
         run: yarn typecheck
       - name: Build
