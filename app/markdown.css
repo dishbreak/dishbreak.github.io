@@ -1,0 +1,120 @@
+/* Rendered-markdown container. Applied to MDX / dangerouslySetInnerHTML output,
+   which can't carry utility classes, so styles hang off descendant selectors.
+   Colors reference the Tailwind theme palette; spacing/type mirror the utilities
+   the old markdownStyle.ts array encoded. */
+.markdown {
+  margin-block: 0.75rem;
+  padding: 1.25rem 2.5rem;
+  background-color: var(--color-stone-900);
+
+  @media (width >=80rem) {
+    margin-left: 8.75rem;
+    margin-right: 3.75rem;
+  }
+
+  @media (width < 40rem) {
+    margin-inline: 0;
+    padding: 0.75rem;
+  }
+
+  h1,
+  h2,
+  h3 {
+    color: var(--color-orange-300);
+    font-weight: 700;
+    padding-bottom: 0.25rem;
+  }
+
+  h1 {
+    padding-top: 1.75rem;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  h2 {
+    padding-top: 1.25rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  h3 {
+    padding-top: 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  a {
+    color: var(--color-orange-400);
+  }
+
+  p {
+    padding-block: 0.5rem;
+  }
+
+  ul,
+  ol {
+    padding-block: 0.75rem;
+    margin-left: 1.5rem;
+    list-style-position: outside;
+  }
+
+  ul {
+    list-style-type: disc;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+
+  li {
+    margin-block: 0.125rem;
+  }
+
+  blockquote {
+    padding-left: 1.5rem;
+    margin-block: 1rem;
+    border-left: 4px solid var(--color-orange-400);
+  }
+
+  pre {
+    padding: 0.5rem;
+    margin-block: 0.5rem;
+    background-color: var(--color-stone-600);
+  }
+
+  code {
+    margin: 0.125rem;
+    padding: 0.125rem 0.25rem;
+    background-color: var(--color-stone-600);
+    white-space: pre-wrap;
+  }
+
+  table {
+    border-collapse: collapse;
+    margin: 0.75rem 0.25rem;
+  }
+
+  th,
+  td {
+    padding: 0.5rem 3rem;
+  }
+
+  td {
+    border: var(--color-stone-900);
+    border-width: 2px;
+  }
+
+  thead>tr {
+    background-color: var(--color-stone-600);
+    color: white;
+    font-weight: bold;
+  }
+
+  tbody>tr:nth-child(even) {
+    background-color: var(--color-stone-800);
+  }
+
+  tbody>tr:nth-child(odd) {
+    background-color: var(--color-stone-700);
+  }
+}

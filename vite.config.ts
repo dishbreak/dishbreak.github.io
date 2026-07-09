@@ -7,6 +7,7 @@ import { JSDOM } from "jsdom"
 import rehypeSlug from "rehype-slug"
 import rehypeExtractToc from '@stefanprobst/rehype-extract-toc'
 import rehypeExtractTocMdx from '@stefanprobst/rehype-extract-toc/mdx'
+import remarkGfm from "remark-gfm"
 
 export default defineConfig(async () => {
   const mdx = await import("@mdx-js/rollup")
@@ -14,6 +15,9 @@ export default defineConfig(async () => {
     base: "/",
     plugins: [
       mdx.default({
+        remarkPlugins: [
+          remarkGfm,
+        ],
         rehypePlugins: [
           rehypeSlug,
           rehypeExtractToc,
@@ -45,5 +49,20 @@ export default defineConfig(async () => {
     resolve: {
       tsconfigPaths: true,
     },
-  }
+    items: (await loadAllPosts()).map(p => {
+      const dom = new JSDOM()
+      const parser = new dom.window.DOMParser()
+      const doc = parser.parseFromString(p.cleanHTML, "text/html")
+      const description = doc.querySelector("p")?.outerHTML
+      return {
+        title: p.attrs["title"] ?? "(untitled)",
+        link: `https://kotcherlakota.org/blog/${p.slug}`,
+        pubDate: p.posted,
+        description
+      }
+    })
+  })],
+resolve: {
+  tsconfigPaths: true,
+  },
 });

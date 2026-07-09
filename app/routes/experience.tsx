@@ -2,6 +2,7 @@ import { promises } from "fs";
 import { type Resume, ResumeSchema } from "../../lib/resume";
 import { type Route } from "./+types/experience"
 import { parse } from "yaml"
+import { PageHeader } from "~/components/PageHeader";
 
 export async function loader({ }: Route.LoaderArgs): Promise<Resume> {
     const rawText = await promises.readFile("data/resume.yaml", "utf-8")
@@ -11,36 +12,36 @@ export async function loader({ }: Route.LoaderArgs): Promise<Resume> {
 export default function Experience({ loaderData }: Route.ComponentProps): React.JSX.Element {
     return <div className="mx-10 pb-10">
         <title>My Experience</title>
-        <div className="font-bold text-orange-400 max-sm:text-4xl text-6xl border-b-4 border-orange-400 pt-8 pb-3">{loaderData.name}</div>
+        <PageHeader>{loaderData.name}</PageHeader>
         <Heading>Objective</Heading>
         <P>{loaderData.objective}</P>
 
         <div className="flex max-sm:flex-col">
             <div className="sm:flex-2/3 sm:mr-2">
                 <Heading>Professional Summary</Heading>
-                <ul className="list-disc list-outside ml-6">
+                <BulletList>
                     {loaderData.summary.map((d, i) => <li key={`summary-${i}`}>{d}</li>)}
-                </ul>
+                </BulletList>
                 <Heading>Key Achievements</Heading>
-                <ul className="list-disc list-outside ml-6">
+                <BulletList>
                     {loaderData.key_achievements.map((a, i) => <li key={`ka-${i}`}>{a}</li>)}
-                </ul>
+                </BulletList>
             </div>
             <div className="sm:flex-1/3">
                 <Heading>Skills</Heading>
                 <div className="max-sm:flex">
-                    <div className="max-sm:p-4 max-sm:flex-1 max-sm:bg-stone-900 max-sm:shadow-orange-300/15 max-sm:shadow-md">
-                        <div className="text-xl font-bold text-orange-300 pt-2 pb-2">Languages</div>
-                        <ul className="list-disc list-outside ml-6">
+                    <Card>
+                        <Heading size="text-xl">Languages</Heading>
+                        <BulletList>
                             {loaderData.skills.languages.map((l, i) => <li key={`lang-${i}`}>{l}</li>)}
-                        </ul>
-                    </div>
-                    <div className="max-sm:ml-10 max-sm:p-4 max-sm:flex-1 max-sm:bg-stone-900 max-sm:shadow-orange-300/15 max-sm:shadow-md">
-                        <div className="text-xl font-bold text-orange-300 pt-2 pb-2">Tools</div>
-                        <ul className="list-disc list-outside ml-6">
+                        </BulletList>
+                    </Card>
+                    <Card>
+                        <Heading size="text-xl">Tools</Heading>
+                        <BulletList>
                             {loaderData.skills.tools.map((t, i) => <li key={`tool-${i}`}>{t}</li>)}
-                        </ul>
-                    </div>
+                        </BulletList>
+                    </Card>
                 </div>
             </div>
         </div>
@@ -53,13 +54,13 @@ export default function Experience({ loaderData }: Route.ComponentProps): React.
                 {o.truncated && <div className="text-xl font-bold text-orange-300 pt-2 pb-2">Selected Highlights</div>}
                 {
                     o.positions.map((p, j) => <div key={`pos-${i}-${j}`}>
-                        <div className="text-lg font-bold text-orange-300 pt-2 pb-2">
+                        <Heading size="text-xl">
                             {p.position} {toMonthYearRange(p)}
-                        </div>
-                        <ul className="list-disc list-outside ml-6">
+                        </Heading>
+                        <BulletList>
                             {p.key_points.map((d, k) =>
                                 <li key={`summary-${i}-${j}-${k}`}>{d}</li>)}
-                        </ul>
+                        </BulletList>
                     </div>)
                 }
             </div>)
@@ -78,10 +79,26 @@ function toMonthYear(d: string | undefined): string {
     return new Intl.DateTimeFormat("en-US", { month: "long", year: "numeric" }).format(new Date(d))
 }
 
-function Heading({ children }: { children: React.ReactNode }): React.JSX.Element {
-    return <div className="font-bold text-orange-300 text-3xl pt-8 pb-4">{children}</div>
+function Heading({ children, size = "text-3xl" }: { children: React.ReactNode, size?: string }): React.JSX.Element {
+    return <div className={`font-bold text-orange-300 ${size} pt-8 pb-4`}>{children}</div>
 }
 
 function P({ children }: { children: React.ReactNode }): React.JSX.Element {
     return <p className="pb-3">{children}</p>
+}
+
+function BulletList({ children }: { children: React.ReactNode }): React.JSX.Element {
+    return <ul className="list-disc list-outside ml-6">
+        {children}
+    </ul>
+}
+
+function Card({ children }: { children: React.ReactNode }): React.JSX.Element {
+    return <div className={["max-sm:p-4",
+        "max-sm:flex-1",
+        "max-sm:bg-stone-900",
+        "max-sm:shadow-orange-300/15",
+        "max-sm:shadow-md",].join(" ")}>
+        {children}
+    </div>
 }

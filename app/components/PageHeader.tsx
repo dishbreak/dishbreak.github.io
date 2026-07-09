@@ -1,10 +1,7 @@
-import React from "react";
+import React from 'react'
 
-export interface Props {
-    children: React.ReactNode
-    className?: string
-}
-
-export function PageHeader({ children, className = "" }: Props): React.JSX.Element {
-    return <div className={`font-bold text-5xl text-orange-400 ${className}`}>{children}</div>
+export function PageHeader({ children, size = "text-5xl" }: { children: React.ReactNode, size?: string }): React.JSX.Element {
+    return <div className={`font-bold ${size} text-orange-400`}>
+        {children}
+    </div>
 }

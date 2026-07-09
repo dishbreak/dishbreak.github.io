@@ -6,11 +6,11 @@ export default function NavBar(): React.JSX.Element {
     const [isHidden, setIsHidden] = useState(true)
     return <div>
         <nav className="w-full">
-            <div className="w-full flex top-0 sticky z-100 bg-stone-700 border-t-4 border-orange-500 text-orange-400">
+            <div className="w-full flex top-0 sticky z-100 bg-stone-700 border-t-4 border-orange-500 text-orange-400 items-center">
                 <Link to="/" className="flex grow ml-1.5 xl:ml-10 p-2 hover:text-stone-700 hover:bg-orange-400">
                     VISHAL KOTCHERLAKOTA
                 </Link>
-                <div className="max-sm:hidden">
+                <div className="max-sm:hidden flex items-center xl:mr-10">
                     <NavLinks />
                 </div>
                 <button
@@ -24,7 +24,7 @@ export default function NavBar(): React.JSX.Element {
                 </button>
             </div>
             <div className="sm:hidden">
-                <div className={`bg-stone-700 ${isHidden ? "hidden": ""} flex flex-col text-orange-400`}>
+                <div className={`bg-stone-700 ${isHidden ? "hidden" : ""} flex flex-col text-orange-400`}>
                     <NavLinks />
                 </div>
             </div>
