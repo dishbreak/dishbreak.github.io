@@ -20,11 +20,6 @@ export default function About({ loaderData }: Route.ComponentProps): React.JSX.E
         </div>
         <div
             dangerouslySetInnerHTML={{ __html: loaderData }}
-            className={[
-                "sm:mt-20 max-sm:mt-5 sm:ml-30 sm:mr-20 max-sm:mx-5 xs:ml-10 xs:mr-5",
-                "[&_h1]:text-3xl [&_h1]:font-bold [&_h1]:text-orange-300 [&_h1]:pb-4",
-                "[&_a]:text-orange-400",
-                "[&_p]:py-2",
-            ].join(" ")} />
+            className="markdown" />
     </div>
 }

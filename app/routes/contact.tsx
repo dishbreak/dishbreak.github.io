@@ -1,10 +1,11 @@
 import type React from "react";
 import type { Route } from "./+types/contact";
+import { PageHeader } from "~/components/PageHeader";
 
 export default function Contact({ }: Route.ComponentProps): React.JSX.Element {
     return <div className="mx-20 my-10">
         <title>Contact Me</title>
-        <div className="font-bold text-5xl text-orange-400 pb-3">Contact Me</div>
+        <PageHeader>Contact Me</PageHeader>
         <p className="pb-1.5">You can contact me in the following ways:</p>
         <div>
             <ContactMethod headline="Email">dishbreak (at) gmail (dawt) com</ContactMethod>

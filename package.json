@@ -24,6 +24,13 @@
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
     "react-router": "8.1.0",
+<<<<<<< Updated upstream
+=======
+    "rehype-slug": "^6.0.0",
+    "remark-frontmatter": "^5.0.0",
+    "remark-gfm": "^4.0.1",
+    "remark-mdx-frontmatter": "^5.2.0",
+>>>>>>> Stashed changes
     "sanitize-html": "^2.17.4",
     "yaml": "^2.9.0",
     "zod": "^4.4.3"

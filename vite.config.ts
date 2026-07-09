@@ -4,6 +4,7 @@ import { rssPlugin } from "vite-plugin-rss";
 import { defineConfig } from "vite";
 import { loadAllPosts } from "./lib/posts";
 import { JSDOM } from "jsdom"
+<<<<<<< Updated upstream
 
 export default defineConfig({
   plugins: [tailwindcss(), reactRouter(), rssPlugin({
@@ -11,6 +12,52 @@ export default defineConfig({
     channel: {
       title: "Vishal Kotcherlakota",
       link: "https://kotcherlakota.org/"
+=======
+import rehypeSlug from "rehype-slug"
+import rehypeExtractToc from '@stefanprobst/rehype-extract-toc'
+import rehypeExtractTocMdx from '@stefanprobst/rehype-extract-toc/mdx'
+import remarkGfm from "remark-gfm"
+
+export default defineConfig(async () => {
+  const mdx = await import("@mdx-js/rollup")
+  return {
+    base: "/",
+    plugins: [
+      mdx.default({
+        remarkPlugins: [
+          remarkGfm,
+        ],
+        rehypePlugins: [
+          rehypeSlug,
+          rehypeExtractToc,
+          rehypeExtractTocMdx,
+        ]
+      }),
+      tailwindcss(),
+      reactRouter(),
+      rssPlugin({
+        mode: "define",
+        channel: {
+          title: "Vishal Kotcherlakota",
+          link: "https://kotcherlakota.org/"
+        },
+        items: (await loadAllPosts()).map(p => {
+          const dom = new JSDOM()
+          const parser = new dom.window.DOMParser()
+          const doc = parser.parseFromString(p.cleanHTML, "text/html")
+          const description = doc.querySelector("p")?.outerHTML
+          return {
+            title: p.attrs["title"] ?? "(untitled)",
+            link: `https://kotcherlakota.org/blog/${p.slug}`,
+            pubDate: p.posted,
+            description
+          }
+        })
+      })
+    ],
+    resolve: {
+      tsconfigPaths: true,
+>>>>>>> Stashed changes
     },
     items: (await loadAllPosts()).map(p => {
       const dom = new JSDOM()
