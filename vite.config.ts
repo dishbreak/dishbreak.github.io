@@ -4,15 +4,6 @@ import { rssPlugin } from "vite-plugin-rss";
 import { defineConfig } from "vite";
 import { loadAllPosts } from "./lib/posts";
 import { JSDOM } from "jsdom"
-<<<<<<< Updated upstream
-
-export default defineConfig({
-  plugins: [tailwindcss(), reactRouter(), rssPlugin({
-    mode: "define",
-    channel: {
-      title: "Vishal Kotcherlakota",
-      link: "https://kotcherlakota.org/"
-=======
 import rehypeSlug from "rehype-slug"
 import rehypeExtractToc from '@stefanprobst/rehype-extract-toc'
 import rehypeExtractTocMdx from '@stefanprobst/rehype-extract-toc/mdx'
@@ -57,7 +48,6 @@ export default defineConfig(async () => {
     ],
     resolve: {
       tsconfigPaths: true,
->>>>>>> Stashed changes
     },
     items: (await loadAllPosts()).map(p => {
       const dom = new JSDOM()
@@ -71,8 +61,5 @@ export default defineConfig(async () => {
         description
       }
     })
-  })],
-  resolve: {
-    tsconfigPaths: true,
-  },
-});
+  }
+})
