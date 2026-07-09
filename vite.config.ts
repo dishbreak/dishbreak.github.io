@@ -61,8 +61,5 @@ export default defineConfig(async () => {
         description
       }
     })
-  })],
-resolve: {
-  tsconfigPaths: true,
-  },
-});
+  }
+})
