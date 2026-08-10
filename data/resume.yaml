@@ -19,21 +19,52 @@ skills:
     - HCL
     - TypeScript
     - Bash
+    - YAML/JSON
   tools:
     - Terraform
     - AWS CDK
+    - Claude Code
+    - Cursor
     - Docker
+    - Kubernetes
+    - ArgoCD
+    - Helm
     - Github Actions
     - Jenkins
 keywords:
-  - Microservices
-  - ReST API Design
-  - Infrastructure-as-code
-  - Config management
-  - Systems monitoring/alerting
   - AI Agents
-  - MCPs
   - AI Skills
+  - Amazon Web Services (AWS)
+  - ArgoCD
+  - Artifactory
+  - AWS IAM (Identity and Access Management)
+  - AWS Lambda
+  - AWS Redshift
+  - AWS S3
+  - AWS VPC
+  - Config management
+  - Continuous Integration/Continuous Delivery (CI/CD)
+  - Devcontainer
+  - Github Codespaces
+  - GitOps
+  - Helm
+  - Infrastructure-as-code
+  - Kubernetes
+  - MCPs
+  - Microservices
+  - NPM
+  - Okta
+  - React
+  - React Router
+  - ReST API Design
+  - SCIM
+  - Serverless
+  - Single Sign-on
+  - Systems monitoring/alerting
+  - Typescript
+  - Vercel
+  - Vite
+  - Yarn
 experience:
   - org: NerdWallet
     startDate: 2018-12-18
@@ -46,8 +77,8 @@ experience:
           - Led a team of 5 engineers focused on developer experience and release enginering.
           - Empower developers with tooling to build/deploy software on multiple platforms, including Vercel, Kubernetes, and ECS.
           - Provide quarter-to-quarter vision for the team as well as on-the-fly prioritization.
-          - Committed to developing people. Oversaw 4 successful promotions, and guided team members towards mastery of skill sets essential to the business.
-          - Promoted the use of AI technologies to better support developers and the business, including the establishment of a shared AI Skills Library that minimized duplication and simplified Skill usage.
+          - Oversaw 4 successful promotions, and guided team members towards mastery of skill sets essential to the business.
+          - Promote the use of AI technologies to better support developers and the business, including the establishment of a shared AI Skills Library that minimized duplication and simplified Skill usage.
         key_technologies:
           - Python
           - Go
