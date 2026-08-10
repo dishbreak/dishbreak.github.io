@@ -16,35 +16,20 @@ export default function Experience({ loaderData }: Route.ComponentProps): React.
         <Heading>Objective</Heading>
         <P>{loaderData.objective}</P>
 
-        <div className="flex max-sm:flex-col">
-            <div className="sm:flex-2/3 sm:mr-5">
-                <Heading>Professional Summary</Heading>
-                <BulletList>
-                    {loaderData.summary.map((d, i) => <li key={`summary-${i}`}>{d}</li>)}
-                </BulletList>
-                <Heading>Key Achievements</Heading>
-                <BulletList>
-                    {loaderData.key_achievements.map((a, i) => <li key={`ka-${i}`}>{a}</li>)}
-                </BulletList>
-            </div>
-            <div className="sm:flex-1/3">
-                <Heading padding="pt-8 pb-2">Skills</Heading>
-                <div className="max-sm:flex">
-                    <Card>
-                        <Heading size="text-xl" padding="pt-2 pb-1">Languages</Heading>
-                        <BulletList>
-                            {loaderData.skills.languages.map((l, i) => <li key={`lang-${i}`}>{l}</li>)}
-                        </BulletList>
-                    </Card>
-                    <Card>
-                        <Heading size="text-xl" padding="pt-2 pt-1">Tools</Heading>
-                        <BulletList>
-                            {loaderData.skills.tools.map((t, i) => <li key={`tool-${i}`}>{t}</li>)}
-                        </BulletList>
-                    </Card>
-                </div>
-            </div>
-        </div>
+        <Heading>Professional Summary</Heading>
+        <BulletList>
+            {loaderData.summary.map((d, i) => <li key={`summary-${i}`}>{d}</li>)}
+        </BulletList>
+        
+        <Heading>Key Achievements</Heading>
+        <BulletList>
+            {loaderData.key_achievements.map((a, i) => <li key={`ka-${i}`}>{a}</li>)}
+        </BulletList>
+
+        <Heading>Skills</Heading>
+        <P><Emphasis>Languages: </Emphasis>{loaderData.skills.languages.join(", ")}</P>
+        <P><Emphasis>Tools: </Emphasis>{loaderData.skills.tools.join(", ")}</P>
+
         <Heading>Experience</Heading>
         {
             loaderData.experience.map((o, i) => <div key={`org=${i}`} className="p-4 mb-10 shadow-lg shadow-orange-300/15 bg-stone-900">
@@ -62,7 +47,7 @@ export default function Experience({ loaderData }: Route.ComponentProps): React.
                                 <li key={`summary-${i}-${j}-${k}`}>{d}</li>)}
                         </BulletList>
                         <p className="pt-2">
-                            <span className="font-bold text-orange-300">Key Technologies: </span>
+                            <Emphasis>Key Technologies: </Emphasis>
                             {p.key_technologies.join(", ")}
                         </p>
                     </div>)
@@ -87,6 +72,10 @@ function toMonthYear(d: string | undefined): string {
 
 function Heading({ children, size = "text-3xl", padding = "pt-8 pb-4" }: { children: React.ReactNode, size?: string, padding?: string }): React.JSX.Element {
     return <div className={`font-bold text-orange-300 ${size} ${padding}`}>{children}</div>
+}
+
+function Emphasis({children}: {children: React.ReactNode}):  React.JSX.Element {
+    return <span className="font-bold text-orange-300">{children}</span>
 }
 
 function P({ children }: { children: React.ReactNode }): React.JSX.Element {
