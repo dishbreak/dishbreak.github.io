@@ -5,10 +5,10 @@ summary:
   - Self-directed with proven results in both in-office and full-time remote roles.
   - Proven "player coach" with the ability to empower and lead ICs while contributing directly towards team goals.
   - Capable individual contributor and technology leader, responsible for teams of up to 25 people.
-  - Specialist in DevOps technologies and processes.
+  - Specialist in DevOps technologies and processes, with 10+ years experience on Amazon Web Services. Comfortable using/deploying tools such as Terraform and AWS CDK to provide operational stability and change management for cloud environments.
   - Comfortable working in cross-functional teams, collaborating with individuals of various backgrounds to design, release, and troubleshoot production-grade software applications.
 key_achievements:
-  - Oversaw a move to Kubernetes from a legacy container orchestrator.
+  - Oversaw a move of 300+ microservices to Kubernetes from a legacy container orchestrator. Identified design goals and directed a group of 10 engineers to complete the effort.
   - Migrated 600+ software repositories from Jenkins to Github Actions, utilizing AI Agents, tool-assisted automations, and reporting jobs to track overall progress.
   - Migrated an identity service off of EC2 instances onto an ECS service with zero downtime and minimal impact to daily operations.
   - Developed a utility that queried Elasticsearch data via histogram aggregation and exported metrics to Datadog via HTTP ReST. The utility fed C-Suite visiblity into business operations and site performance.
@@ -20,16 +20,20 @@ skills:
     - TypeScript
     - Bash
   tools:
+    - Terraform
+    - AWS CDK
     - Docker
     - Github Actions
     - Jenkins
-    - Terraform
 keywords:
   - Microservices
   - ReST API Design
   - Infrastructure-as-code
   - Config management
   - Systems monitoring/alerting
+  - AI Agents
+  - MCPs
+  - AI Skills
 experience:
   - org: NerdWallet
     startDate: 2018-12-18
@@ -41,6 +45,9 @@ experience:
           - Hybrid Manager/IC role, full-time remote position.
           - Led a team of 5 engineers focused on developer experience and release enginering.
           - Empower developers with tooling to build/deploy software on multiple platforms, including Vercel, Kubernetes, and ECS.
+          - Provide quarter-to-quarter vision for the team as well as on-the-fly prioritization.
+          - Committed to developing people. Oversaw 4 successful promotions, and guided team members towards mastery of skill sets essential to the business.
+          - Promoted the use of AI technologies to better support developers and the business, including the establishment of a shared AI Skills Library that minimized duplication and simplified Skill usage.
         key_technologies:
           - Python
           - Go
@@ -52,13 +59,17 @@ experience:
           - Gitops
           - Github Actions
           - Vercel
+          - AI Agents
+          - MCP
+          - Skills
       - position: Staff Engineer, Production Engineering
         startDate: 2019-12-18
         endDate: 2022-03-31
         key_points:
-          - Participated in a 24/7 oncall rotation, responding to incidents that impacted our site's ability to operate.
           - Planned and executed multiple migrations and upgrades, including a database split, major version DB upgrade, and Dockerizing an existing application.
           - Developed standards and best practices that teammates and other teams adopted around migration work and observability.
+          - Participated in a 24/7 oncall rotation, responding to incidents that impacted our site's ability to operate. Provided critical support during cyberattacks and site-down situations.
+          - Assisted with incident management, communications, resolution, and postmortems.
         key_technologies:
           - Python
           - Go
